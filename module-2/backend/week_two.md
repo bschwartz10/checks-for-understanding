@@ -5,6 +5,7 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR.
 
 1. At a high level, what is ActiveRecord? What does it do/allow you to do?
+>Active Record is a ruby tool that allows us to interact with a SQL library by using ruby. It acts as a liason between our models and our database. It allows us to query the database using ruby/active record methods.
 2. Assume you have the following model:
 
 ```ruby
