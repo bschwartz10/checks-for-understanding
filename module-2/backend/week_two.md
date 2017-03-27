@@ -14,8 +14,10 @@ end
 ```
 
 What are some methods you can call on `Team`? If these methods aren't defined in the class, how do you have access to them?
+>We can call active record methods on team. Some example methods are .all, .find, .where, .find_by, .count. We have access to these methods b/c this class inherits from ActiveRecord.
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
+>
 
 4. Assume that you added a line to your `Team` class as follows:
 
