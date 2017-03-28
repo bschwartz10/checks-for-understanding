@@ -17,7 +17,7 @@ What are some methods you can call on `Team`? If these methods aren't defined in
 >We can call active record methods on team. Some example methods are .all, .find, .where, .find_by, .count. We have access to these methods b/c this class inherits from ActiveRecord.
 
 3. Assume that in your database, a team has the following attributes: "id", "name", owner_id". How would you find the name of a team with an id of 4? Assuming your class only included the code from question 2, how could you find the owner of the same team?
->
+>Team.find(4).name   Owner.find(Team.find(4).owner_id)
 
 4. Assume that you added a line to your `Team` class as follows:
 
@@ -28,12 +28,17 @@ end
 ```
 
 Now how would you find the owner of the team with an id of 4?
+>Team.find(4).owner
 
 5. In a database that's holding students and teachers, what will be the relationship between students and teachers? Draw the schema diagram.
-6. Define foreign key, primary key, and schema.
-7. Describe the relationship between a foreign key on one table and a primary key on another table.
-8. What are the parts of an HTTP response?
+> Teachers have_many students. Students have_many teachers.
 
+6. Define foreign key, primary key, and schema.
+> Foreign key identifies the primary key of an object in another table. Primary key is a unque value assigned to each instance of an object. Schema is a diagram of all the relationships in a program. 
+7. Describe the relationship between a foreign key on one table and a primary key on another table.
+> A foreign key on one table points to a primary key on another. They are referencing the same instance.
+8. What are the parts of an HTTP response?
+>The response is split up between the head and body. the head has the status code, content-length and other misc. info. The body has the raw html for the web page.
 
 ### Optional Questions
 
