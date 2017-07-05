@@ -5,12 +5,12 @@ Fork this respository. Answer the questions to the best of your ability. Try to 
 Note: When you're done, submit a PR.
 
 1. What's the most useful thing you learned from completing the intermission week work?
- * Basic Javascript syntax and functionality
+   * Basic Javascript syntax and functionality
 
 2. What are some tools to help debug JavaScript code?
- 1. PryJS
- 2. Chrome Console
- 3. Debugger
+ * PryJS
+ * Chrome Console
+ * Debugger
 
 3. What are some tools you need in order to unit test your JavaScript?
  * Mocha and Chai
